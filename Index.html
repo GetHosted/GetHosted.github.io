@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>GetHosted</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64;" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;"><b>Get<br>Hosted</b></h3>
+
+
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="#examples" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Examples</a>
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a>
+
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Price</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+
+  <!-- Modal -->
+  <div id="id01" class="w3-modal">
+      <div class=" w3-red w3-modal-content w3-card-4 w3-animate-top">
+        <header class="w3-container w3-theme-l1">
+          <span onclick="document.getElementById('id01').style.display='none'"
+          class="w3-button w3-display-topright">×</span>
+          <h4>GetHosted Web Design is one guy making lightweight websites in pure HTML/CSS.</h4>
+          <h5>Lightweight HTML/CSS websites are the future, fully functional on mobile, laptop, desktop, dial-up, windows 95, AOL... whatever you're running. <i class="fa fa-smile-o"></i></h5>
+        </header>
+        <div class="w3-padding">
+          <p>Coupled with free hosting on Github Pages, this may be the most inexpensive way to get your business, hobby or cat pictures on your own website.</p>
+
+        </div>
+        <footer class="w3-container w3-orange w3-theme-l1">
+          <p>Here's a nice orange footer.</p>
+        </footer>
+      </div>
+  </div>
+
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>GetHosted</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="examples">
+    <h1 class="w3-jumbo"><b>Web Design</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Examples:</b></h1>
+    <hr style="width:100%;border:4px solid red" class="w3-round">
+  </div>
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="restaurant.png" style="width:100%" onclick="onClick(this)" alt="Example restaurant website landing page">
+      <img src="anndoe.png" style="width:100%" onclick="onClick(this)" alt="Example photography website landing page">
+        </div>
+
+    <div class="w3-half">
+      <img src="deecafe.png" style="width:100%" onclick="onClick(this)" alt="Example cafe website landing page">
+      <img src="ggconstruction.png" style="width:100%" onclick="onClick(this)" alt="Example builder's website landing page">
+
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Services.</b></h1>
+    <hr style="width:100%;border:4px solid red" class="w3-round">
+    <p>Simple. Beautiful. Static Websites built and hosted.</p>
+    <p>We build your site based on your requirements, responsive to mobile and tablet displays, your site is built to modern standards. We'll push your site to a github page to give you an easy and instant hosting solution (no monthly cost). We build our static sites in pure HTML/CSS and conform to modern standards.
+    </p>
+  </div>
+
+
+
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Price.</b></h1>
+    <hr style="width:100%;border:4px solid red" class="w3-round">
+    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16">Your design</li>
+        <li class="w3-padding-16">Static site</li>
+        <li class="w3-padding-16">Github Hosted</li>
+        <li class="w3-padding-16">Quick delivery</li>
+        <li class="w3-padding-16">Pure HTML/CSS</li>
+        <li class="w3-padding-16">
+          <h2>£30</h2>
+          <span class="w3-opacity">one site built and hosted</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Extras</li>
+        <li class="w3-padding-16">PayPal Payment Button</li>
+        <li class="w3-padding-16">Contact Form</li>
+        <li class="w3-padding-16">Google Maps Integration</li>
+        <li class="w3-padding-16">Updates</li>
+            <li class="w3-padding-16">
+          <h2>£5</h2>
+          <span class="w3-opacity">/extra</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:100%;border:4px solid red" class="w3-round">
+    <p>Looking for something featured in our <a href="#examples" onclick="w3_close()">Examples</a>? or maybe a website just like this one? Fill out the form and fill me in with the details :)</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Your Website</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;"><p class="w3-right">GetHosted 2018</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
